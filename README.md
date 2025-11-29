@@ -101,12 +101,17 @@ Without these insights, the company cannot optimize retention strategies, compen
 
 ---
 
-**Business Recommendations**
+## Business Recommendations
 **1. Reduce overtime:** Implement flexible schedules, rotate workloads, and limit excessive work hours.
+
 **2. Increase salary for lower bands:** Employees earning below ₹5000 show significantly higher attrition.
+
 **3. Improve work-life balance:** Remote work options, flexible timing, and fewer weekend shifts.
+
 **4. Strengthen the Sales department:** Sales roles show the highest burnout → improve targets, incentives, and mental-health support.
+
 **5. Improve manager–employee relationships:** Early-tenure employees with new managers leave faster → Increase 1-on-1s, manager training, onboarding support.
+
 **6. Focus on job satisfaction:** Recognize good work, career development discussions, and feedback cycles.
 
 ---
