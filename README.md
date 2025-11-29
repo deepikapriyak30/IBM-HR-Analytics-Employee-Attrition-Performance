@@ -1,8 +1,12 @@
 # IBM-HR-Analytics-Employee-Attrition-Performance
 End-to-end HR analytics project using Python, SQL, and Tableau to analyze employee attrition and performance. Includes data cleaning, EDA, ML models (Logistic Regression, Random Forest, XGBoost), feature importance, business insights, and recommendations.
 
+---
+
 # IBM HR Analytics — Employee Attrition & Performance  
 **Author:** Deepika Priya K
+
+---
 
 ## Executive Summary
 Using Python, SQL, and Tableau, I analyzed the IBM HR Analytics dataset to understand **why employees leave the company** and **which factors drive attrition the most.**
@@ -20,52 +24,104 @@ The analysis helps companies improve **employee retention, compensation planning
 ---
 
 ## Business Problem
-High attrition adds recruiting and onboarding costs and disrupts teams. This analysis answers:
-- Which employees are at risk of leaving?
-- Which factors drive attrition (actionable levers)?
-- What interventions will reduce churn?
+Employee turnover is expensive — it affects productivity, hiring costs, team morale, and business performance.
+
+However, the HR team lacked visibility into critical areas such as:
+
+- Who is most likely to leave
+- Whether low satisfaction or low income impacts attrition
+- If overtime and workload create burnout
+- Which roles & departments experience the highest churn
+- How strongly workplace factors influence employee decisions
+
+Without these insights, the company cannot optimize retention strategies, compensation plans, or manager development programs.
+
+---
 
 ## Methodology
-1. Read raw HR data (kept untouched) → exploratory data analysis (EDA) and visualizations.
-2. Prepare ML dataset (one-hot encoding, derive `AttritionFlag`).
-3. Train/Test split (stratified), then:
-   - Logistic Regression (scaled features)
-   - Random Forest (no scaling)
-   - XGBoost (no scaling, `scale_pos_weight` to handle imbalance)
-4. Evaluate models using Accuracy, Precision, Recall, F1, ROC-AUC. Save model comparison and top features.
-5. Export 4 CSV tables for SQL / Power BI: `employee_master.csv`, `salary_data.csv`, `satisfaction_data.csv`, `attrition_data.csv`.
+**1. Cleaned & prepared the dataset**
+- Fixed data types
+- Removed duplicate/unnecessary fields
+- Handled categorical encoding
+- Created new features (AttritionFlag)
+
+**2. Performed exploratory data analysis (EDA)**
+- Attrition patterns by age, income, department, job role
+- Boxplots, countplots, and distribution analysis
+- Correlation heatmap to identify strong relationships
+
+**3. Built predictive ML models**
+- Logistic Regression
+- Random Forest
+- XGBoost (best balance between precision & recall)
+- Compared accuracy, recall, F1-score, ROC-AUC
+
+**4. Created SQL-ready tables**
+- Employee master
+- Salary details
+- Job satisfaction data
+- Attrition & overtime records
+
+**5. Designed Tableau dashboards (in-progress)**
+- Attrition by department, job role, income, tenure
+- Key drivers of attrition
+- Manager effectiveness & satisfaction scores
+
+---
 
 ## Skills & Tools
-- Python: Pandas, Matplotlib, Seaborn, scikit-learn, XGBoost  
-- Data engineering: CSV export, table split for SQL/BI  
-- Modeling: Logistic Regression, Random Forest, XGBoost, class-imbalance handling  
-- Visualization & storytelling: EDA charts, feature importance, executive recommendations
+- **Python:** Pandas, Numpy, Matplotlib, Seaborn, scikit-learn, XGBoost  
+- **Data engineering:** CSV export, table split for SQL/BI  
+- **Machine Learning:** Logistic Regression, Random Forest, XGBoost, model evaluation
+- **Visualization & storytelling:** EDA charts, feature importance, executive recommendations
 
-## Results & Business Recommendations
-**Key ML / EDA findings**
-- **Top drivers of attrition**: Overtime (Yes), low stock options, Sales roles, low YearsAtCompany/YearsWithManager, low job satisfaction, lower monthly income, younger age, poor environment satisfaction.
-- **Model performance summary** (example):  
-  - Logistic Regression: Accuracy ~0.777, Recall ~0.661, ROC-AUC ~0.809 (good for finding churn but lower precision)  
-  - Random Forest: Accuracy ~0.842, Precision ~0.556 (avoids false positives)  
-  - XGBoost: Accuracy ~0.837, best F1-balance (~0.444), good overall tradeoff
+---
 
-**Business actions (top recommendations)**
-1. **Reduce overtime**: cap OT hours; rotate workload; provide comp-off.  
-2. **Improve pay / stock options for low bands**: review bands for employees with MonthlyIncome < ₹5,000 (or company-equivalent).  
-3. **Manager training & onboarding**: support employees in first 2–4 years; improve manager–employee check-ins.  
-4. **Improve role experience in Sales**: re-evaluate targets, mental-health support, better incentives.  
-5. **Measure & iterate**: run A/B tests on comp-off, flexible hours, and increased ESOPs; track attrition change.
+## Key Results & Insights
+**Major Drivers of Attrition**
+- OverTime = Yes → strongest predictor
+- Low Job Satisfaction
+- Low Environment Satisfaction
+- Low Monthly Income
+- YearsAtCompany (1–3 years) → early-tenure employees leave more
+- Sales Executives & Sales Department show highest churn
+- Weak manager relationship (low YearsWithCurrManager)
+
+**Machine Learning Results** 
+  - **Logistic Regression** → Best recall (66%), catches more actual attrition cases 
+  - **Random Forest** → Best precision (55%), fewer false positives 
+  - **XGBoost** → Best overall balance (highest F1 among models)
+
+**Overall Model Comparison (Preview)**
+| Model               | Accuracy | Precision (Yes) | Recall (Yes) | F1-score | ROC-AUC |
+| ------------------- | -------- | --------------- | ------------ | -------- | ------- |
+| Logistic Regression | 0.777    | 0.386           | 0.661        | 0.487    | 0.809   |
+| Random Forest       | 0.842    | 0.556           | 0.084        | 0.147    | 0.758   |
+| XGBoost             | 0.837    | 0.489           | 0.406        | 0.444    | 0.766   |
+
+---
+
+**Business Recommendations**
+**1. Reduce overtime:** Implement flexible schedules, rotate workloads, and limit excessive work hours.
+**2. Increase salary for lower bands:** Employees earning below ₹5000 show significantly higher attrition.
+**3. Improve work-life balance:** Remote work options, flexible timing, and fewer weekend shifts.
+**4. Strengthen the Sales department:** Sales roles show the highest burnout → improve targets, incentives, and mental-health support.
+**5. Improve manager–employee relationships:** Early-tenure employees with new managers leave faster → Increase 1-on-1s, manager training, onboarding support.
+**6. Focus on job satisfaction:** Recognize good work, career development discussions, and feedback cycles.
+
+---
 
 ## Next Steps
-1. Deploy XGBoost model as a daily prediction job (score new hires / high-risk employees).  
-2. Build a dashboard (Power BI/Tableau) that lists high-risk employees + top contributing features per person.  
-3. Validate interventions (e.g., overtime limit pilot) using a randomized pilot and measure attrition change after 6 months.
+1. Add Tableau dashboards for department-wise and manager-wise attrition.
+2. Build a churn-risk scoring model for each employee.
+3. Integrate HR SQL tables into Tableau for automated reporting.
+4. Explore SHAP values to explain XGBoost predictions more clearly.
+5. Add segmentation analysis (Age bands, salary groups, job families).
 
-## Files in repo
-- `HR-Employee-Attrition.csv` *(original — keep private if sensitive)*  
-- `notebook.ipynb` or `hr_attrition_cleaned.py` (clean notebook)  
-- `cleaned_ml_hr_dataset.csv` (used for modeling)  
-- `employee_master.csv`, `salary_data.csv`, `satisfaction_data.csv`, `attrition_data.csv` (SQL/BI import)  
-- `model_comparison.csv` (summary metrics)
+---
+
+## Dataset Source
+IBM HR Analytics Employee Attrition Dataset — Public dataset available on Kaggle for learning and research purposes.
+(I do not own the data; full credit to the original creator.)
 
 ---
