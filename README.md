@@ -5,7 +5,19 @@ End-to-end HR analytics project using Python, SQL, and Tableau to analyze employ
 **Author:** Deepika Priya K
 
 ## Executive Summary
-A compact EDA + ML pipeline that uncovers drivers of employee attrition and builds models to predict who is most likely to leave. Key finding: overtime, low stock options, low job level / income and short tenure strongly increase attrition risk. Models (Logistic, RandomForest, XGBoost) achieve ~0.77–0.84 accuracy; XGBoost balances precision/recall best.
+Using Python, SQL, and Tableau, I analyzed the IBM HR Analytics dataset to understand **why employees leave the company** and **which factors drive attrition the most.**
+
+The project includes:
+
+- Cleaning and preparing HR employee records
+- Exploring key patterns in satisfaction, income, overtime, and tenure
+- Building ML models to predict attrition
+- Creating separate SQL-ready tables for BI dashboards
+- Delivering clear, actionable recommendations for HR teams
+
+The analysis helps companies improve **employee retention, compensation planning, workload balance, and managerial effectiveness.**
+
+---
 
 ## Business Problem
 High attrition adds recruiting and onboarding costs and disrupts teams. This analysis answers:
