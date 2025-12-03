@@ -89,7 +89,7 @@ Without these insights, the company cannot optimize retention strategies, compen
 
 ## 📊 Attrition Distribution
 <p align="centre">
-<img src="https://github.com/deepikapriyak30/IBM-HR-Analytics-Employee-Attrition-Performance/blob/main/image/Attrition%20Distribution.png?raw=true" width="650">
+<img src="https://github.com/deepikapriyak30/IBM-HR-Analytics-Employee-Attrition-Performance/blob/main/image/Attrition%20Distribution.png?raw=true" width="400">
 </p>
 
 **Machine Learning Results** 
