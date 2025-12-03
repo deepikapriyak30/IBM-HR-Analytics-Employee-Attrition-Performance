@@ -87,6 +87,11 @@ Without these insights, the company cannot optimize retention strategies, compen
 - Sales Executives & Sales Department show highest churn
 - Weak manager relationship (low YearsWithCurrManager)
 
+## 📊 Attrition Distribution
+<p align="centre">
+<img src="https://github.com/deepikapriyak30/supermart-grocery-sales-analysis/blob/main/images/sales_by_category.jpg?raw=true" width="650">
+</p>
+
 **Machine Learning Results** 
   - **Logistic Regression** → Best recall (66%), catches more actual attrition cases 
   - **Random Forest** → Best precision (55%), fewer false positives 
