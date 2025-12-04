@@ -13,7 +13,7 @@ Using Python, SQL, and Tableau, I analyzed the IBM HR Analytics dataset to under
 
 The project includes:
 
-- Cleaning and preparing HR employee records
+- Cleaned and prepared HR employee records
 - Exploring key patterns in satisfaction, income, overtime, and tenure
 - Building ML models to predict attrition
 - Creating separate SQL-ready tables for BI dashboards
@@ -24,7 +24,7 @@ The analysis helps companies improve **employee retention, compensation planning
 ---
 
 ## Business Problem
-Employee turnover is expensive — it affects productivity, hiring costs, team morale, and business performance.
+Employee turnover is costly and impacts productivity, hiring expenses, team morale, and overall business performance.
 
 However, the HR team lacked visibility into critical areas such as:
 
@@ -43,7 +43,7 @@ Without these insights, the company cannot optimize retention strategies, compen
 - Fixed data types
 - Removed duplicate/unnecessary fields
 - Handled categorical encoding
-- Created new features (AttritionFlag)
+- Created new features (e.g., AttritionFlag)
 
 **2. Performed exploratory data analysis (EDA)**
 - Attrition patterns by age, income, department, job role
@@ -62,7 +62,7 @@ Without these insights, the company cannot optimize retention strategies, compen
 - Job satisfaction data
 - Attrition & overtime records
 
-**5. Designed Tableau dashboards (in-progress)**
+**5. Designed Tableau dashboards**
 - Attrition by department, job role, income, tenure
 - Key drivers of attrition
 - Manager effectiveness & satisfaction scores
@@ -73,7 +73,7 @@ Without these insights, the company cannot optimize retention strategies, compen
 - **Python:** Pandas, Numpy, Matplotlib, Seaborn, scikit-learn, XGBoost  
 - **Data engineering:** CSV export, table split for SQL/BI  
 - **Machine Learning:** Logistic Regression, Random Forest, XGBoost, model evaluation
-- **Visualization & storytelling:** EDA charts, feature importance, executive recommendations
+- **Visualization & storytelling:** EDA charts, feature importance, dashboard insights, executive recommendations
 
 ---
 
@@ -81,7 +81,7 @@ Without these insights, the company cannot optimize retention strategies, compen
 **Major Drivers of Attrition**
 - OverTime = Yes → strongest predictor
 - Low Job Satisfaction
-- Low Environment Satisfaction
+- Low Environmental Satisfaction
 - Low Monthly Income
 - YearsAtCompany (1–3 years) → early-tenure employees leave more
 - Sales Executives & Sales Department show highest churn
@@ -124,14 +124,14 @@ Without these insights, the company cannot optimize retention strategies, compen
 ## Next Steps
 1. Add Tableau dashboards for department-wise and manager-wise attrition.
 2. Build a churn-risk scoring model for each employee.
-3. Integrate HR SQL tables into Tableau for automated reporting.
-4. Explore SHAP values to explain XGBoost predictions more clearly.
-5. Add segmentation analysis (Age bands, salary groups, job families).
+3.Integrate HR SQL tables into Tableau for automated reporting.
+4.Explore SHAP values to explain XGBoost predictions more clearly.
+5. Add segmentation analysis (age bands, salary groups, job families).
 
 ---
 
 ## Dataset Source
 IBM HR Analytics Employee Attrition Dataset — Public dataset available on Kaggle for learning and research purposes.
-(I do not own the data; full credit to the original creator.)
+_I do not own the data. All credit goes to the original authors._
 
 ---
