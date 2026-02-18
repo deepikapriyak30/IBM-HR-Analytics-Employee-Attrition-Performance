@@ -100,6 +100,7 @@ Based on both EDA and Machine Learning feature importance:
 - Low Monthly Income
 - Low Stock Option Level
 - Frequent Business Travel
+
 This indicates that workload pressure, compensation structure, and early-tenure risk are the primary business levers influencing attrition.
 
 These findings are consistent across statistical analysis and machine learning feature importance, increasing confidence in the insights.
