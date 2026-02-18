@@ -100,8 +100,9 @@ Based on both EDA and Machine Learning feature importance:
 - Low Monthly Income
 - Low Stock Option Level
 - Frequent Business Travel
+This indicates that workload pressure, compensation structure, and early-tenure risk are the primary business levers influencing attrition.
 
-These findings are consistent across statistical analysis and ML feature importance, strengthening confidence in the results.
+These findings are consistent across statistical analysis and machine learning feature importance, increasing confidence in the insights.
 
 ### 📊 Attrition Distribution
 <p align="centre">
@@ -122,8 +123,7 @@ The following table compares model performance on test data:
 | Random Forest       | 0.842    | 0.556           | 0.084        | 0.147    | 0.758   |
 | XGBoost             | 0.837    | 0.489           | 0.406        | 0.444    | 0.766   |
 
-Overall, Logistic Regression is most suitable when the goal is early risk detection,
-while XGBoost provides the most balanced performance for practical HR deployment.
+Overall, Logistic Regression is most suitable for early risk detection, while XGBoost provides the most balanced performance for real-world HR deployment.
 
 ---
 
