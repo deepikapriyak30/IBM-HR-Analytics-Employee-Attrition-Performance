@@ -40,33 +40,36 @@ Without these insights, the organization cannot effectively optimize retention s
 ---
 
 ## Methodology
-**1. Cleaned & prepared the dataset**
-- Fixed data types
-- Removed duplicate/unnecessary fields
-- Handled categorical encoding
-- Created new features (e.g., AttritionFlag)
 
-**2. Performed exploratory data analysis (EDA)**
-- Attrition patterns by age, income, department, job role
-- Boxplots, countplots, and distribution analysis
-- Correlation heatmap to identify strong relationships
+### 1. Data Cleaning & Preparation
+- Fixed data types and validated schema
+- Removed duplicate and non-informative fields
+- Encoded categorical variables
+- Created derived features (e.g., AttritionFlag)
 
-**3. Built predictive ML models**
+### 2. Exploratory Data Analysis (EDA)
+- Analyzed attrition patterns by age, income, department, and job role
+- Used boxplots, countplots, and distribution analysis
+- Generated correlation heatmaps to identify key relationships
+
+### 3. Predictive Modeling
 - Logistic Regression
 - Random Forest
 - XGBoost (best balance between precision & recall)
-- Compared accuracy, recall, F1-score, ROC-AUC
+- Compared models using Accuracy, Precision, Recall, F1-score, and ROC-AUC
 
-**4. Designed relational data model**
-- Employee data table
-- Salary data table
-- Satisfaction data table
-- Attrition & Overtime table
+### 4. Relational Data Modeling
+- Designed normalized SQL-ready tables:
+  - Employee data
+  - Salary data
+  - Satisfaction data
+  - Attrition & Overtime data
 
-**5. Designed Power BI dashboards**
-- Attrition by department, job role, income, tenure
-- Key drivers of attrition
-- Manager effectiveness & satisfaction scores
+### 5. Business Intelligence Dashboard
+- Built interactive Power BI dashboards
+- Visualized attrition by department, job role, income, and tenure
+- Highlighted key attrition drivers
+- Analyzed manager effectiveness and satisfaction metrics
 
 ---
 
