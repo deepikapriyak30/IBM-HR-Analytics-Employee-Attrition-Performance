@@ -24,17 +24,18 @@ The solution combines business analytics and machine learning to deliver actiona
 ---
 
 ## Business Problem
+
 Employee turnover is costly and impacts productivity, hiring expenses, team morale, and overall business performance.
 
-However, the HR team lacked visibility into critical areas such as:
+However, the HR team lacked visibility into critical questions such as:
 
-- Who is most likely to leave
-- Whether low satisfaction or low income impacts attrition
-- If overtime and workload create burnout
-- Which roles & departments experience the highest churn
-- How strongly workplace factors influence employee decisions
+- Who is most likely to leave?
+- Does low satisfaction or low income increase attrition risk?
+- Does overtime and workload contribute to burnout?
+- Which roles and departments experience the highest churn?
+- How strongly do workplace factors influence employee decisions?
 
-Without these insights, the company cannot optimize retention strategies, compensation plans, or manager development programs.
+Without these insights, the organization cannot effectively optimize retention strategies, compensation planning, or manager development programs.
 
 ---
 
