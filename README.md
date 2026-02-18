@@ -85,38 +85,45 @@ Without these insights, the organization cannot effectively optimize retention s
 ---
 
 ## Key Results & Insights
-## Major Drivers of Attrition
+
+### Major Drivers of Attrition
+
 Based on both EDA and Machine Learning feature importance:
-- **OverTime (Yes)** – Strongest predictor of attrition
-- **Low Job Satisfaction**
-- **Low Environment Satisfaction**
-- **Low Work-Life Balance**
-- **Young Age (25–35 years)**
-- **Low Years at Company (1–3 years)**
-- **Sales Department & Sales Executive roles**
-- **Low Monthly Income**
-- **Low Stock Option Level**
-- **Frequent Business Travel**
 
-These findings are consistent across statistical analysis and model feature importance, strengthening confidence in the results.
+- Overtime (Yes) – Strongest predictor of attrition
+- Low Job Satisfaction
+- Low Environment Satisfaction
+- Poor Work-Life Balance
+- Young Age (25–35 years)
+- Early Tenure (1–3 years at company)
+- Sales Department & Sales Executive roles
+- Low Monthly Income
+- Low Stock Option Level
+- Frequent Business Travel
 
-## 📊 Attrition Distribution
+These findings are consistent across statistical analysis and ML feature importance, strengthening confidence in the results.
+
+### 📊 Attrition Distribution
 <p align="centre">
 <img src="https://github.com/deepikapriyak30/IBM-HR-Analytics-Employee-Attrition-Performance/blob/main/dashboard-image/Attrition%20Distribution.jpg?raw=true" width="350">
 </p>
 
-**Machine Learning Results** 
-  - **Logistic Regression** → Best recall (66%), catches more actual attrition cases 
-  - **Random Forest** → Best precision (55%), fewer false positives 
-  - **XGBoost** → Best overall balance (highest F1 among models)
+### Model Performance Summary
+
+- **Logistic Regression** – Highest recall (66%), best at identifying employees likely to leave.
+- **Random Forest** – Highest precision (55.6%), fewer false positives.
+- **XGBoost** – Best overall balance (highest F1-score among models).
 
 The following table compares model performance on test data:
-**Overall Model Comparison (Preview)**
+
 | Model               | Accuracy | Precision (Yes) | Recall (Yes) | F1-score | ROC-AUC |
 | ------------------- | -------- | --------------- | ------------ | -------- | ------- |
 | Logistic Regression | 0.777    | 0.386           | 0.661        | 0.487    | 0.809   |
 | Random Forest       | 0.842    | 0.556           | 0.084        | 0.147    | 0.758   |
 | XGBoost             | 0.837    | 0.489           | 0.406        | 0.444    | 0.766   |
+
+Overall, Logistic Regression is most suitable when the goal is early risk detection,
+while XGBoost provides the most balanced performance for practical HR deployment.
 
 ---
 
