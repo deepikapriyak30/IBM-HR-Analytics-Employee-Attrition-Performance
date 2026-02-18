@@ -1,9 +1,5 @@
 # IBM-HR-Analytics-Employee-Attrition-Performance
 End-to-end HR analytics project using Python, SQL, and Tableau to analyze employee attrition and performance. Includes data cleaning, EDA, ML models (Logistic Regression, Random Forest, XGBoost), feature importance, business insights, and recommendations.
-
----
-
-# IBM HR Analytics — Employee Attrition & Performance  
 **Author:** Deepika Priya K
 
 ---
@@ -14,7 +10,7 @@ This project presents an end-to-end HR Attrition Analytics pipeline built using:
 
 - **Python** for data cleaning, EDA, and Machine Learning  
 - **SQL** for relational data modeling and structured analysis  
-- **Tableau / Power BI** for interactive business dashboards  
+- **Power BI** for interactive business dashboards  
 
 The objective is to identify key factors driving employee attrition and build predictive models to forecast which employees are at risk of leaving.
 
@@ -55,13 +51,13 @@ Without these insights, the company cannot optimize retention strategies, compen
 - XGBoost (best balance between precision & recall)
 - Compared accuracy, recall, F1-score, ROC-AUC
 
-**4. Created SQL-ready tables**
-- Employee master
-- Salary details
-- Job satisfaction data
-- Attrition & overtime records
+**4. Designed relational data model**
+- Employee data table
+- Salary data table
+- Satisfaction data table
+- Attrition & Overtime table
 
-**5. Designed Tableau dashboards**
+**5. Designed Power BI dashboards**
 - Attrition by department, job role, income, tenure
 - Key drivers of attrition
 - Manager effectiveness & satisfaction scores
@@ -104,6 +100,7 @@ These findings are consistent across statistical analysis and model feature impo
   - **Random Forest** → Best precision (55%), fewer false positives 
   - **XGBoost** → Best overall balance (highest F1 among models)
 
+The following table compares model performance on test data:
 **Overall Model Comparison (Preview)**
 | Model               | Accuracy | Precision (Yes) | Recall (Yes) | F1-score | ROC-AUC |
 | ------------------- | -------- | --------------- | ------------ | -------- | ------- |
