@@ -106,7 +106,7 @@ This indicates that workload pressure, compensation structure, and early-tenure 
 These findings are consistent across statistical analysis and machine learning feature importance, increasing confidence in the insights.
 
 ### 📊 Attrition Distribution
-<p align="centre">
+<p align="center">
 <img src="https://github.com/deepikapriyak30/IBM-HR-Analytics-Employee-Attrition-Performance/blob/main/dashboard-image/Attrition%20Distribution.jpg?raw=true" width="350">
 </p>
 
@@ -124,7 +124,7 @@ The following table compares model performance on test data:
 | Random Forest       | 0.842    | 0.556           | 0.084        | 0.147    | 0.758   |
 | XGBoost             | 0.837    | 0.489           | 0.406        | 0.444    | 0.766   |
 
-Overall, Logistic Regression is most suitable for early risk detection, while XGBoost provides the most balanced performance for real-world HR deployment.
+Overall, Logistic Regression is most suitable when early risk detection (high recall) is the priority, while XGBoost provides the most balanced performance for practical HR deployment scenarios.
 
 ---
 
