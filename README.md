@@ -130,19 +130,19 @@ Overall, Logistic Regression is most suitable for early risk detection, while XG
 
 ## Business Impact Potential
 
-If high-risk employees are identified early using the predictive model:
+If high-risk employees are identified early using the predictive attrition model, HR can take proactive intervention actions such as:
 
-- HR can proactively engage employees showing early attrition signals
-- Reducing overtime exposure could significantly decrease attrition risk
-- Improving compensation for lower salary bands may reduce voluntary exits
-- Better work-life balance policies can increase employee retention
+- Proactively engage employees showing early attrition signals
+- Reduce overtime exposure to lower burnout-driven exits
+- Optimize compensation for lower salary bands to reduce voluntary attrition
+- Strengthen work-life balance policies to improve retention
 
-Even a 5–10% reduction in attrition can significantly reduce:
+Even a 5–10% reduction in attrition could lead to substantial cost savings by reducing:
 - Hiring costs
 - Training expenses
 - Productivity loss
 
-This project demonstrates how data-driven HR analytics can directly improve organizational stability and long-term performance.
+This project demonstrates how predictive HR analytics can directly influence retention strategy, cost control, and long-term organizational stability.
 
 ---
 
