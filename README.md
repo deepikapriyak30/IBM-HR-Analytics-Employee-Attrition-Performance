@@ -3,7 +3,7 @@ End-to-end HR analytics project using Python, SQL, and Power BI to analyze emplo
 
 ---
 
-# IBM HR Analytics — Employee Attrition & Performance
+## IBM HR Analytics — Employee Attrition & Performance
 **Author:** Deepika Priya K
 
 ---
