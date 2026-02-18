@@ -187,12 +187,12 @@ This project demonstrates how predictive HR analytics can directly influence ret
 ---
 
 ## Next Steps
-- Deploy the best-performing model as an **HR risk scoring tool**
-- Integrate model predictions into a **real-time HR dashboard**
-- Improve model explainability for HR stakeholders
-- Perform advanced hyperparameter tuning for further optimization
-- Explore deployment options using Flask or FastAPI for production use
 
+- Deploy XGBoost model as an HR risk scoring tool
+- Integrate predictions into Power BI dashboard
+- Perform hyperparameter tuning for further optimization
+- Use SHAP to improve model explainability
+- Test retention strategies and measure impact
 
 ---
 
