@@ -148,31 +148,41 @@ This project demonstrates how predictive HR analytics can directly influence ret
 
 ## Business Recommendations
 
-1. **Reduce Overtime Exposure**
-   - Implement workload balancing
-   - Introduce compensatory leave policies
-   - Monitor high-risk departments
+### 1. Reduce Overtime Exposure
+- Implement workload balancing strategies across teams  
+- Introduce structured compensatory leave policies  
+- Monitor high-risk departments with excessive overtime trends  
+- Track overtime impact using dashboard KPIs  
 
-2. **Improve Compensation Strategy**
-   - Review salary bands below ₹5000
-   - Align compensation with industry benchmarks
+### 2. Optimize Compensation Strategy
+- Review salary bands below ₹5000 (high-risk segment)  
+- Align compensation with industry benchmarks  
+- Introduce performance-linked incentive models  
+- Improve stock option offerings for retention-sensitive roles  
 
-3. **Enhance Work-Life Balance**
-   - Offer flexible working hours
-   - Enable hybrid/remote options where possible
+### 3. Strengthen Work–Life Balance
+- Offer flexible working hours where operationally feasible  
+- Enable hybrid or remote work options  
+- Reduce weekend workload where possible  
+- Conduct periodic employee burnout assessments  
 
-4. **Strengthen Sales Department Support**
-   - Improve incentive structures
-   - Provide burnout prevention programs
+### 4. Support High-Risk Departments (Sales Focus)
+- Redesign incentive structures to reduce stress-driven exits  
+- Provide burnout prevention and stress management programs  
+- Improve performance coaching support  
+- Monitor department-level attrition trends monthly  
 
-5. **Improve Manager–Employee Engagement**
-   - Increase 1-on-1 interactions
-   - Improve onboarding support for early-tenure employees
+### 5. Improve Manager–Employee Engagement
+- Increase frequency of structured 1-on-1 meetings  
+- Provide onboarding mentorship for early-tenure employees (0–3 years)  
+- Train managers on engagement and retention strategies  
+- Track manager-level attrition metrics  
 
-6. **Boost Employee Satisfaction**
-   - Recognition programs
-   - Career growth planning
-   - Continuous feedback systems
+### 6. Enhance Overall Employee Satisfaction
+- Introduce structured recognition programs  
+- Provide clear career growth pathways  
+- Conduct regular engagement surveys  
+- Implement continuous feedback mechanisms  
 
 ---
 
