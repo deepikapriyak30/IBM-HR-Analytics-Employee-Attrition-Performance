@@ -19,7 +19,7 @@ This project presents an end-to-end HR Attrition Analytics pipeline built using:
 
 The objective is to identify key factors driving employee attrition and build predictive models to forecast which employees are at risk of leaving.
 
-The project combines business analysis and machine learning to deliver actionable HR recommendations for improving employee retention and organizational stability.
+The solution combines business analytics and machine learning to deliver actionable HR insights that support employee retention, workforce planning, and organizational stability.
 
 ---
 
