@@ -74,12 +74,13 @@ Without these insights, the organization cannot effectively optimize retention s
 ---
 
 ## Skills & Tools
+
 - **Programming:** Python (Pandas, NumPy, Scikit-learn, XGBoost)
-- **Data Engineering:** SQL (Views, Joins, Data Modeling)
+- **SQL & Data Modeling:** Views, Joins, Relational Schema Design
 - **Machine Learning:** Logistic Regression, Random Forest, XGBoost
 - **Model Evaluation:** Accuracy, Precision, Recall, F1-score, ROC-AUC
-- **Visualization:** Tableau / Power BI
-- **Analytics:** EDA, Feature Engineering, Business Insight Generation
+- **Business Intelligence:** Power BI
+- **Data Analysis:** EDA, Feature Engineering, Insight Generation
 
 ---
 
