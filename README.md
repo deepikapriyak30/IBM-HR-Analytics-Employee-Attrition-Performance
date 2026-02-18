@@ -107,7 +107,7 @@ These findings are consistent across statistical analysis and machine learning f
 
 ### 📊 Attrition Distribution
 <p align="center">
-<img src="https://github.com/deepikapriyak30/IBM-HR-Analytics-Employee-Attrition-Performance/blob/main/dashboard-image/Attrition%20Distribution.jpg?raw=true" width="350">
+<img src="https://github.com/deepikapriyak30/IBM-HR-Analytics-Employee-Attrition-Performance/blob/main/assets/attrition_distribution.jpg?raw=true" width="350">
 </p>
 
 ### Model Performance Summary
