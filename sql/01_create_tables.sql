@@ -22,7 +22,7 @@ CREATE TABLE employee_data (
 );
 
 CREATE TABLE salary_data (
-    EmployeeNumber INT,
+    EmployeeNumber INT PRIMARY KEY,
     JobLevel INT,
     MonthlyIncome INT,
     MonthlyRate INT,
@@ -31,24 +31,30 @@ CREATE TABLE salary_data (
     PercentSalaryHike INT,
     StockOptionLevel INT,
     PerformanceRating INT,
-    PRIMARY KEY (EmployeeNumber)
+	CONSTRAINT fk_sal_emp
+	Foreign Key (EmployeeNumber)
+    REFERENCES employee_data(EmployeeNumber)
 );
 
 CREATE TABLE satisfaction_data (
-    EmployeeNumber INT,
+    EmployeeNumber INT PRIMARY KEY,
     JobInvolvement INT,
     JobSatisfaction INT,
     EnvironmentSatisfaction INT,
     WorkLifeBalance INT,
     RelationshipSatisfaction INT,
-    PRIMARY KEY (EmployeeNumber)
+    CONSTRAINT fk_satis_emp
+	Foreign Key (EmployeeNumber)
+    REFERENCES employee_data(EmployeeNumber)
 );
 
 CREATE TABLE attrition_data (
-    EmployeeNumber INT,
+    EmployeeNumber INT PRIMARY KEY,
     Attrition VARCHAR(10),
     OverTime VARCHAR(10),
-    PRIMARY KEY (EmployeeNumber)
+    CONSTRAINT fk_attri_emp
+	Foreign Key (EmployeeNumber)
+    REFERENCES employee_data(EmployeeNumber)
 );
 
 CREATE OR REPLACE VIEW hr_master AS
@@ -93,5 +99,3 @@ FROM employee_data e
 LEFT JOIN salary_data s USING(EmployeeNumber)
 LEFT JOIN satisfaction_data sa USING(EmployeeNumber)
 LEFT JOIN attrition_data a USING(EmployeeNumber);
-
-
