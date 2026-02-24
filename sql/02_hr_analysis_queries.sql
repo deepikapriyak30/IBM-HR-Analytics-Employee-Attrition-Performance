@@ -34,7 +34,7 @@ FROM hr_master
 GROUP BY OverTime, Attrition;
 
 -- Average Salary per Department
-SELECT Department, AVG(MonthlyIncome)
+SELECT Department, ROUND(AVG(MonthlyIncome),2) AS AvgSalary
 FROM hr_master
 GROUP BY Department;
 
